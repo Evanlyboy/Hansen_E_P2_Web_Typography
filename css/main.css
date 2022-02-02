@@ -11,7 +11,7 @@
 #container {
 width: 700px;
 margin: 0 auto;
-background-color:rgb(236, 223, 177);
+background-color:rgb(207,152,72);
 }
 
 body {
@@ -24,16 +24,38 @@ body {
 h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    font-size: 30px;
     margin-top: 10px;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 
+h2 {
+    font-family: 'Calligraffitti', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+    color: rgb(28, 23, 17);
+    transition-duration: 200ms;
+}
+
+h2:hover {
+    cursor: pointer;
+    color: rgb(250, 241, 226);
+}
+
 h3 {
     font-family: 'Raleway', sans-serif;
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: rgb(250, 241, 226);
+    transition-duration: 500ms;
+}
+
+h3:hover {
+    color: rgb(28, 23, 17);
 }
 
 
@@ -62,9 +84,27 @@ h3 {
     max-width: auto;
 }
 
+.floatImgRight {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: end;
+    justify-content: right;
+    margin-right: 1em;
+}
+
+.floatImgRight img {
+    max-height: 200px;
+    max-width: auto;
+}
+
 .floatTextRight {
     display: flex;
     justify-content: end;
+}
+
+.floatTextLeft {
+    display: flex;
+    justify-content: start;
 }
 
 .lePadding {
@@ -76,15 +116,30 @@ h3 {
     justify-content: center;
 }
 
-p {
-    font-family: 'Assistant', sans-serif;
-    font-size: 14px;
-    font-weight: 200;
-}
+
 .bigText {
     font-size: 24px;
 }
 
-h3 {
-display: inline;
+
+.footer {
+    height: 100px;
+    background-color: rgb(139,59,24);
+}
+
+p {
+    font-family: 'Assistant', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(28, 23, 17);
+}
+
+.header {
+    height: 100px;
+    background-color: rgb(139,59,24);
+    transition-duration: 500ms;
+}
+
+.header:hover {
+    color: rgb(250, 241, 226);
 }
